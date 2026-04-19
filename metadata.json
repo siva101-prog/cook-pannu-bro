@@ -1,0 +1,6 @@
+{
+  "name": "Cook Pannu Bro",
+  "description": "Premium multi-page student cooking & budgeting app with a friendly Bro-persona AI coach.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
