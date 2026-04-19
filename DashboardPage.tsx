@@ -1,33 +1,11 @@
-@import "tailwindcss";
+import { motion } from "motion/react";
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { ShoppingBasket, MapPin, TrendingUp, Tags } from 'lucide-react';
+import { useState, useEffect } from "react";
+// FIX THIS LINE TOO: 
+// Change from "../services/priceService" to "./priceService"
+import { getRealTimePrices, PriceIntel } from "./priceService"; 
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-slate-950: #020617;
-  --color-slate-900: #0f172a;
-  --color-slate-800: #1e293b;
-  --color-slate-400: #94a3b8;
-  --color-electric-lime: #CCFF00;
-}
-
-@layer base {
-  body {
-    @apply bg-slate-950 font-sans text-white antialiased;
-  }
-}
-
-.glass {
-  background: rgba(15, 23, 42, 0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(204, 255, 0, 0.15);
-}
-
-.glass-pill {
-  background: rgba(30, 41, 59, 0.8);
-  border: 1px solid rgba(204, 255, 0, 0.15);
-}
-
-.bg-pattern {
-  background-image: 
-    radial-gradient(circle at 2px 2px, rgba(204, 255, 0, 0.03) 1px, transparent 0);
-  background-size: 40px 40px;
-}
+const savingsData = [
+  { day: 'Mon', saved: 150 },
+  // ... rest of your code
