@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import AuthPage from "./pages/AuthPage";
+import AuthPage from './AuthPage'; // Must match the capital 'A' and 'P'
 import DashboardPage from "./pages/DashboardPage";
 import CookPage from "./pages/CookPage";
 
